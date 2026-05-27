@@ -1,4 +1,4 @@
-# ultremezofficial.github.io
+# yashasvidwivedi26.github.io
 Welcome to My Website! 👋
 
 This is my very first website hosted for free on GitHub Pages. 
