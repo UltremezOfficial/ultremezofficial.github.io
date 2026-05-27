@@ -1,28 +1,34 @@
-/* 1. Global Styles & Reset */
+/* ==========================================
+   1. Global Styles & Reset
+   ========================================== */
 body {
-    background-color: #0f172a; 
-    color: #f1f5f9;            
+    background-color: #0f172a; /* Sleek, dark slate background */
+    color: #f1f5f9;            /* Soft off-white text for readability */
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;         
+    min-height: 100vh;         /* Centers the profile card vertically on any screen */
 }
 
-/* 2. Profile Card Container */
+/* ==========================================
+   2. Profile Card Container
+   ========================================== */
 .profile-container {
-    background-color: #1e293b; 
+    background-color: #1e293b; /* Lighter slate to create a modern "card" look */
     max-width: 600px;
     width: 90%;
     padding: 2.5rem;
-    border-radius: 16px;       
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3); 
-    text-align: center; 
+    border-radius: 16px;       /* Smooth, modern rounded corners */
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3); /* Premium depth shadow */
+    text-align: center;        /* Centers the titles and bio paragraph */
 }
 
-/* 3. Typography */
+/* ==========================================
+   3. Typography
+   ========================================== */
 h1 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
@@ -32,7 +38,7 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
-    color: #3b82f6; 
+    color: #3b82f6;            /* Accent blue color for your name */
     margin-top: 0;
     margin-bottom: 1.5rem;
     font-weight: 600;
@@ -40,41 +46,57 @@ h2 {
 
 .bio-text {
     font-size: 1.1rem;
-    line-height: 1.6;          
-    color: #cbd5e1;            
+    line-height: 1.6;          /* Generous line height for a clean layout */
+    color: #cbd5e1;            /* Slightly muted gray text */
     margin-bottom: 2rem;
 }
 
-/* 4. Links & Buttons Layout */
+/* ==========================================
+   4. Links & Buttons Layout
+   ========================================== */
 .links-container {
     display: flex;
-    flex-direction: column; 
-    gap: 12px;              
+    flex-direction: column;    /* Stacks all buttons vertically */
+    gap: 12px;                 /* Clean, even spacing between buttons */
     align-items: center;
 }
 
 .btn {
     display: inline-flex;      
     align-items: center;       
-    justify-content: center;
-    gap: 10px;                 
+    justify-content: flex-start; /* Perfectly aligns icons and text to the left */
+    padding-left: 1.5rem;        /* Uniform starting position for text alignment */
+    gap: 12px;                 
     color: #ffffff;
-    text-decoration: none;     
-    padding: 0.75rem 1.5rem;
+    text-decoration: none;     /* Removes standard link underlines */
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
     border-radius: 8px;
     font-weight: 600;
-    width: 200px; 
-    transition: background-color 0.2s ease, transform 0.2s ease; 
+    width: 220px;               /* Fixed uniform width for clean symmetry */
+    transition: background-color 0.2s ease, transform 0.2s ease; /* Smooth hover effects */
 }
 
+/* Forces all button icons to align on a perfect vertical axis */
+.btn i {
+    width: 20px;                
+    text-align: center;
+}
+
+/* ==========================================
+   5. Individual Button Colors & Hovers
+   ========================================== */
+
+/* GitHub - Dark Charcoal */
 .btn-github {
     background-color: #24292e; 
 }
 .btn-github:hover {
     background-color: #1a1e22;
-    transform: translateY(-2px); 
+    transform: translateY(-2px); /* Subtle lift animation */
 }
 
+/* Goals and Stats - Forest Green */
 .btn-goals {
     background-color: #16a34a; 
 }
@@ -83,56 +105,37 @@ h2 {
     transform: translateY(-2px); 
 }
 
-/* 5. Social Grid Layout (4 Icons Row) */
-.social-grid {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin-top: 10px;
-    width: 232px; /* Perfectly sized to balance out the width of the main buttons above */
-}
-
-.social-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
-    border-radius: 8px;
-    color: #ffffff;
-    font-size: 1.3rem;
-    text-decoration: none;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-/* Social Button Branding Colors */
+/* YouTube - Classic Brand Red */
 .btn-youtube {
-    background-color: #ff0000; /* YouTube Red */
+    background-color: #ff0000; 
 }
 .btn-youtube:hover {
     background-color: #cc0000;
     transform: translateY(-2px);
 }
 
+/* Discord - Modern Blurple */
 .btn-discord {
-    background-color: #5865f2; /* Discord Blurple */
+    background-color: #5865f2; 
 }
 .btn-discord:hover {
     background-color: #404eed;
     transform: translateY(-2px);
 }
 
+/* Reddit - Orangered */
 .btn-reddit {
-    background-color: #ff4500; /* Reddit Orangered */
+    background-color: #ff4500; 
 }
 .btn-reddit:hover {
     background-color: #e03d00;
     transform: translateY(-2px);
 }
 
+/* Roblox - Deep Black with Border */
 .btn-roblox {
-    background-color: #000000; /* Roblox Black */
-    border: 1px solid #334155;
+    background-color: #000000; 
+    border: 1px solid #334155;  /* Subtle border to pop against the slate card */
 }
 .btn-roblox:hover {
     background-color: #111827;
