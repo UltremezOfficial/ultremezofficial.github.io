@@ -22,7 +22,7 @@ body {
    ========================================== */
 .profile-container {
     background-color: #1e293b; 
-    max-width: 480px;          /* Adjusted slightly to make the filled blocks look incredibly crisp */
+    max-width: 450px;          
     width: 90%;
     padding: 2.5rem;
     border-radius: 16px;       
@@ -42,7 +42,7 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
-    color: #3b82f6;            
+    color: #38bdf8;            /* Bright neon blue for dark mode */
     margin-top: 0;
     margin-bottom: 1.5rem;
     font-weight: 600;
@@ -69,19 +69,20 @@ h2 {
 .btn {
     display: inline-flex;      
     align-items: center;       
-    justify-content: center;   /* Centers the text and icon perfectly together inside the block */
-    gap: 12px;                 
+    justify-content: flex-start; /* Left-aligns icon + text for a cleaner look */
+    padding-left: 2rem;          /* Pushes content nicely away from the left edge */
+    gap: 16px;                 
     color: #ffffff;            
     text-decoration: none;     
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     border-radius: 8px;
     font-weight: 600;
-    width: 260px;              /* Sets a clean, uniform width matching your original layout style */
+    width: 280px;               /* Uniform width looks clean and structured */
     transition: background-color 0.2s ease, transform 0.2s ease; 
 }
 
-/* Fixes icon size alignment */
+/* Keeps icons perfectly centered on a vertical axis */
 .btn i {
     width: 20px;                
     text-align: center;
@@ -89,19 +90,19 @@ h2 {
 }
 
 /* ==========================================
-   5. Individual Button Colors & Hovers
+   5. Official Brand Colors & Hovers
    ========================================== */
 
-/* GitHub - Dark Charcoal */
+/* GitHub - Black/Dark Charcoal */
 .btn-github {
     background-color: #24292e; 
 }
 .btn-github:hover {
-    background-color: #1a1e22;
+    background-color: #171a1d;
     transform: translateY(-2px); 
 }
 
-/* Goals and Stats - Vibrant Green */
+/* Goals and Stats - Custom Success Green */
 .btn-goals {
     background-color: #16a34a; 
 }
@@ -110,38 +111,39 @@ h2 {
     transform: translateY(-2px); 
 }
 
-/* YouTube - Brand Red */
+/* YouTube - Official Brand Red */
 .btn-youtube {
-    background-color: #ef4444; 
+    background-color: #ff0000; 
 }
 .btn-youtube:hover {
-    background-color: #dc2626;
+    background-color: #cc0000;
     transform: translateY(-2px);
 }
 
-/* Discord - Modern Blurple */
+/* Discord - Official "Blurple" */
 .btn-discord {
     background-color: #5865f2; 
 }
 .btn-discord:hover {
-    background-color: #4752c4;
+    background-color: #404eed;
     transform: translateY(-2px);
 }
 
-/* Reddit - Orangered */
+/* Reddit - Official "Orangered" */
 .btn-reddit {
     background-color: #ff4500; 
 }
 .btn-reddit:hover {
-    background-color: #e03d00;
+    background-color: #cc3700;
     transform: translateY(-2px);
 }
 
-/* Roblox - Deep Graphite Gray */
+/* Roblox - Official Dark Charcoal/Black */
 .btn-roblox {
-    background-color: #374151; 
+    background-color: #000000; 
+    border: 1px solid #334155; /* Subtle border so it stands out against the slate card */
 }
 .btn-roblox:hover {
-    background-color: #1f2937;
+    background-color: #111827;
     transform: translateY(-2px);
 }
